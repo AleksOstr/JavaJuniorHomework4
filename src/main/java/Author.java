@@ -10,7 +10,7 @@ public class Author {
     private Long id;
     @Column(name = "name")
     private String name;
-    @OneToMany(mappedBy = "author")
+    @OneToMany
     private List<Book> book;
 
     public Author() {
