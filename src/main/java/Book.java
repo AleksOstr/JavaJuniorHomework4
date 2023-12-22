@@ -9,7 +9,7 @@ public class Book {
     @Column(name = "name")
     private String name;
     @ManyToOne
-    @JoinColumn(name = "author_name", referencedColumnName = "id")
+    @JoinColumn(name = "author_id", referencedColumnName = "id")
     private Author author;
 
     public Book() {
